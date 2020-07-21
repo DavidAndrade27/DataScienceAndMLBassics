@@ -25,4 +25,4 @@ rules = eclat(data = dataset, parameter = list(support = 0.004, minlen = 2))
 
 
 #Data vis
-inspect(x = rules)
+inspect(sort(rules, by = "support")[1:10])
